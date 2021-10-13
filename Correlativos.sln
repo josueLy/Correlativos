@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Correlativos", "Correlativos\Correlativos.csproj", "{70ABB0C6-A81F-4B35-B626-A692BB70F65C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{19ED964F-6272-45BD-9A30-FC4A9B41709E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{E51DFD19-ED83-4ABB-B975-19DB2F76D8DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70ABB0C6-A81F-4B35-B626-A692BB70F65C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70ABB0C6-A81F-4B35-B626-A692BB70F65C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70ABB0C6-A81F-4B35-B626-A692BB70F65C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70ABB0C6-A81F-4B35-B626-A692BB70F65C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19ED964F-6272-45BD-9A30-FC4A9B41709E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19ED964F-6272-45BD-9A30-FC4A9B41709E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19ED964F-6272-45BD-9A30-FC4A9B41709E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19ED964F-6272-45BD-9A30-FC4A9B41709E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E51DFD19-ED83-4ABB-B975-19DB2F76D8DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E51DFD19-ED83-4ABB-B975-19DB2F76D8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E51DFD19-ED83-4ABB-B975-19DB2F76D8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E51DFD19-ED83-4ABB-B975-19DB2F76D8DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33B503D1-9B69-405A-BC20-0A00BDF237D4}
+	EndGlobalSection
+EndGlobal

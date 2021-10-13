@@ -1,0 +1,107 @@
+﻿@using Entidades
+@model Entidades.Correlativo
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Correlativos</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+
+</head>
+<h1>Create</h1>
+
+<h4>Correlativo</h4>
+<hr />
+<div class="row">
+    <div class="form-group container-fluid col-lg-10">
+        <form asp-action="Create">
+
+            <div class="form-inline col-lg-9 h-25">
+                <div class="form-inline col-sm-4">
+                    <label class="control-label col-sm-2">Dni:</label>
+                    <input id="txtDni" asp-for="trabajador.dni" class="form-control" onkeypress="return handleEnter('search-user',event);" />
+                    <span asp-validation-for="trabajador.dni" class="text-danger"></span>
+                </div>
+
+                <div class="form-inline ml-lg-2">
+                    <label class="control-label"> Nombre: </label>
+
+                    @if (Model != null && Model.trabajador != null)
+                    {
+                        <input id="txtNombre" readonly asp-for="trabajador.nombre" class="form-control ml-lg-1" value="@(Model.trabajador.nombre!=null?Model.trabajador.nombre:"")" />
+                    }
+                    else
+                    {
+                        <input id="txtNombre" readonly class="form-control ml-lg-1" />
+                    }
+
+                </div>
+
+            </div>
+            <div class="form-inline col-lg-5 h-25">
+                <label class="control-label"> Tipo de Documento: </label>
+                <select asp-for="tipodocumento.idTipDoc" class="form-control ml-lg-2" asp-items="@(new SelectList(Model.tiposDocumento,"idTipDoc","descripcion"))"></select>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-inline col-lg-5 h-25">
+                <label asp-for="descripcion" class="control-label"></label>
+                <input id="txtDescripcion" asp-for="descripcion" class="form-control ml-xl-4" />
+                
+            </div>
+            <div class="form-inline col-lg-5 h-25">
+                <label asp-for="monto" class="control-label"></label>
+                <input id="txtMonto" type="number" step=".01" asp-for="monto" value="" class="form-control ml-lg-5" />
+                <span asp-validation-for="monto" class="text-danger"></span>
+            </div>
+            <div class="form-inline col-lg-9 h-25 ">
+                <input type="submit" value="Guardar" class="btn btn-primary " />
+                <input id="btnSalir" type="button" value="Salir" class="btn btn-danger ml-lg-4" />
+            </div>
+        </form>
+    </div>
+</div>
+@if (Model.codigo != null && !Model.codigo.Equals("")  && Model.trabajador!=null && Model.tipodocumento != null)
+{
+    <script type="text/javascript">
+
+        window.onload = function () {
+            alert("Tu @Model.tipodocumento.descripcion.ToUpper() es el número : @Model.codigo");
+
+        };
+
+
+    </script>
+
+}
+
+
+@if (Model != null && Model.trabajador != null && Model.trabajador.idTrabajador == 0)
+{
+
+    <script type="text/javascript">
+
+
+        window.onload = function () {
+            alert("El trabajador solicitado no existe");
+
+        };
+
+    </script>
+}
+
+
+
+
+@section Scripts {
+
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
