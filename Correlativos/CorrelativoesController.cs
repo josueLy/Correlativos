@@ -37,15 +37,12 @@ namespace Correlativos
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("monto", "descripcion")] Correlativo correlativo, [Bind("idTipDoc")] TipoDocumento tipoDocumento, [Bind("dni", "nombre")] Trabajador trabajador,string dni)
         {
-
-
             if (trabajador != null && trabajador.nombre != null && !trabajador.nombre.Equals(""))
             {
                 Correlativo _correlativo = null;
                 string codigo = null;
                 int codigoentero = 1;
 
-                
 
                 if (_context.correlativo.Count()>0 
                     && _context.correlativo.Where(c => c.tipodocumento.idTipDoc == tipoDocumento.idTipDoc).Count() > 0
@@ -90,10 +87,8 @@ namespace Correlativos
                     codigo = tipoDocumento.prefijo+"-000" + codigoentero;
                 }
 
-             
                 correlativo.codigo = codigo;
 
-                
 
                 if (_context.trabajador.Where(t => t.dni == trabajador.dni).Count() > 0)
                 {

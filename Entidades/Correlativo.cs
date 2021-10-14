@@ -28,8 +28,7 @@ namespace Entidades
         [ForeignKey("IdTipDoc")]
         public virtual TipoDocumento tipodocumento { get; set; }
 
-        [Column("descripcion")]
-        [Required]
+        [Column("descripcion")]        
         [StringLength(50)]
         public string descripcion { get; set; }
 
