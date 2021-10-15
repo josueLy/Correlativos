@@ -50,3 +50,4 @@ D:\Josue\Net Core\Correlativos\Entidades\bin\Debug\System.Memory.xml
 D:\Josue\Net Core\Correlativos\Entidades\bin\Debug\System.Numerics.Vectors.xml
 D:\Josue\Net Core\Correlativos\Entidades\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Josue\Net Core\Correlativos\Entidades\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Josue\Net Core\Correlativos\Entidades\obj\Debug\Entidades.csproj.CopyComplete

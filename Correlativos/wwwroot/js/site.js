@@ -8,12 +8,12 @@ $("#lblValidadorMonto").hide();
 $("#lblValidadorDni").hide();
 
 
-$("#btnSalir").click(function () {
-    $("#txtDni").val("");
-    $("#txtNombre").val("");
-    $("#txtMonto").val("");
-    $("#txtDescripcion").val("");
-});
+//$("#frmSalir").submit(function (event) {
+//    alert("submiteado");
+   
+//    window.location.replace("http://stackoverflow.com");
+
+//});
 
 $("#frmcorrelativo").submit(function (event) {
 

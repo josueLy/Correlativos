@@ -156,3 +156,4 @@ D:\Josue\Net Core\Correlativos\Correlativos\obj\Debug\netcoreapp3.1\Correlativos
 D:\Josue\Net Core\Correlativos\Correlativos\obj\Debug\netcoreapp3.1\Correlativos.pdb
 D:\Josue\Net Core\Correlativos\Correlativos\obj\Debug\netcoreapp3.1\Correlativos.genruntimeconfig.cache
 D:\Josue\Net Core\Correlativos\Correlativos\bin\Debug\netcoreapp3.1\Entidades.dll.config
+D:\Josue\Net Core\Correlativos\Correlativos\obj\Debug\netcoreapp3.1\Razor\Views\Correlativoes\Close.cshtml.g.cs

@@ -60,9 +60,12 @@
             </div>
             <div class="form-inline col-lg-9 h-25 ">
                 <input type="submit" value="Guardar" class="btn btn-primary " />
-                <input id="btnSalir" type="button" value="Salir" class="btn btn-danger ml-lg-4" />
+                </form>
+                <form   method="post" asp-action="Close">
+                    <input id="btnSalir"  type="submit" value="Salir" class="btn btn-danger ml-lg-4" />
+                </form>
             </div>
-        </form>
+        
     </div>
 </div>
 @if (Model.codigo != null && !Model.codigo.Equals("")  && Model.trabajador!=null && Model.tipodocumento != null)

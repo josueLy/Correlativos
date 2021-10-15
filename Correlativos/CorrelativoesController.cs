@@ -129,7 +129,13 @@ namespace Correlativos
             
         }
 
-        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Close()
+        {
+            return View();
+        }
+
 
     }
 }
